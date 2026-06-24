@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DMG background for BookTracker.
+  Authored at 2x: 1200x800 px == a 600x400 pt Finder window.
+  Icon centers (in 600x400 window pts): app (150,190), Applications (450,190).
+  Everything below is those coordinates multiplied by 2.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfbfd"/>
+      <stop offset="1" stop-color="#eceaf1"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="6" refY="5"
+            orient="auto" markerUnits="strokeWidth">
+      <path d="M0,1 L7,5 L0,9 Z" fill="#9b8cc4"/>
+    </marker>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#bg)"/>
+
+  <!-- headline -->
+  <text x="600" y="150" text-anchor="middle"
+        font-family="-apple-system, Helvetica Neue, Arial, sans-serif"
+        font-size="44" font-weight="600" fill="#2b2440">
+    Install BookTracker
+  </text>
+  <text x="600" y="205" text-anchor="middle"
+        font-family="-apple-system, Helvetica Neue, Arial, sans-serif"
+        font-size="26" font-weight="400" fill="#6c6680">
+    Drag the app onto the Applications folder
+  </text>
+
+  <!-- arrow from the app (~x=300) to Applications (~x=900), at icon row y=380 -->
+  <line x1="470" y1="380" x2="720" y2="380"
+        stroke="#9b8cc4" stroke-width="9" stroke-linecap="round"
+        marker-end="url(#arrowhead)"/>
+</svg>
